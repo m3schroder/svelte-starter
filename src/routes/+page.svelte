@@ -1,9 +1,7 @@
 <script>
 	import { Card, Button, Hr } from 'flowbite-svelte';
-	import FreeQuote from '@ui/FreeQuote.svelte';
 	import { ArrowSmallRight } from 'svelte-heros-v2';
 	import links from '$lib/links';
-	import PageTitle from '@ui/PageTitle.svelte';
 	export const label = undefined;
 </script>
 
@@ -20,7 +18,6 @@
 		<h2>Hassle-Free</h2>
 		<h2>Quality Driven</h2>
 	</h5>
-	<FreeQuote />
 </Card>
 
 <Card class="flex flex-col card flex-wrap pb-10 justify-start">

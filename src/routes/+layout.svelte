@@ -1,12 +1,9 @@
 <script lang="ts">
-	import { page } from '$app/stores';
 	import { afterUpdate } from 'svelte';
 
 	import '../app.postcss';
 	import Navbar from '@ui/Navbar.svelte';
-	import Map from '@ui/Map.svelte';
 	import Menu from '@ui/Menu.svelte';
-	import QuoteForm from '@ui/QuoteForm.svelte';
 	import Footer from '@ui/Footer.svelte';
 
 	let topLevel: HTMLElement;
@@ -25,25 +22,15 @@
 		class="h-fit lg:pt-28 flex flex-col items-center lg:gap-16 gap-9 lg:w-full w-screen pt-5 mb-24"
 		style={`padding-bottom: ${navHeight}px;`}
 	>
-		<a href="/">
-			<img
-				src={'/magnolia-logo.png'}
-				alt={'Mangolia Valley Landscape logo'}
-				class={`p-5 transition-all ${$page.route.id != '/' ? 'lg:w-72 w-64' : 'lg:w-96 w-80'} p-3`}
-			/>
-		</a>
 		<slot />
 		<div
 			class="flex lg:flex-row flex-col lg:items-start lg:justify-between items-center gap-9 lg:w-full lg:max-w-3xl"
 		>
-			<Map />
 			<Footer />
 		</div>
 	</content>
 	<Navbar bind:navHeight />
 	<div class={`fixed w-full z-10 flex-center`}>
-		<QuoteForm />
 		<Menu />
-		<!-- <Call bind:navHeight /> -->
 	</div>
 </main>

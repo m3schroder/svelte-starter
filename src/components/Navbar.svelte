@@ -32,7 +32,7 @@
 	id="navbar"
 >
 	<NavBrand href="/">
-		<img src="magnolia-logo.png" class="mr-3 h-8 sm:h-9" alt="Magnolia Logo" />
+		<img src="favicon.png" class="mr-3 h-8 sm:h-9" alt="Magnolia Logo" />
 	</NavBrand>
 	<NavUl ulClass="flex gap-8 text-md">
 		<!-- <NavLi active={currentRoute == '/contact'} href="/contact">About</NavLi> -->
